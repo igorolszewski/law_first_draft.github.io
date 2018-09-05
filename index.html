@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kancelaria Prawnicza Jan Olszewski & Partners</title>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+    </head>
+    
+    <body>
+       <header class="header">
+          <div class="container">
+          <img src="logobw.jpg" alt="logo">
+           <h1>Kancelaria Prawnicza Jan Olszewski & Partners</h1>
+           <p>
+                 
+           </p>
+           </div>
+       </header>
+        <nav class="nav">
+          <div class="container">
+           <ul>
+               <li><a href=#omnie>KANCELARIA</a></li>
+               <li><a href=#oferta>ZAKRES USŁUG</a></li>   
+               <li><a href=#projekty>HONORARIUM</a></li>
+               <li><a href=#kontakt>KONTAKT</a></li>          
+               
+           </ul>  
+           </div>        
+        </nav>
+    <section class="section" id="omnie">
+    <div class="container">
+    <h2>KANCELARIA</h2>
+        <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta ut justo nec facilisis. Nulla nec diam vitae purus molestie porta vel vel lectus. Praesent sagittis lectus vel enim congue egestas. Sed id nibh tortor. Integer mattis in ex at porta.      
+           </p>
+        <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta ut justo nec facilisis. Nulla nec diam vitae purus molestie porta vel vel lectus. Praesent sagittis lectus vel enim congue egestas. Sed id nibh tortor. Integer mattis in ex at porta.      
+           </p>
+    </div>
+    </section>    
+    <section class="section" id="oferta">
+    <div class="container">
+    <h2>ZAKRES USŁUG</h2>
+        <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta ut justo nec facilisis. Nulla nec diam vitae purus molestie porta vel vel lectus. Praesent sagittis lectus vel enim congue egestas. Sed id nibh tortor. Integer mattis in ex at porta.      
+           </p>
+        <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta ut justo nec facilisis. Nulla nec diam vitae purus molestie porta vel vel lectus. Praesent sagittis lectus vel enim congue egestas. Sed id nibh tortor. Integer mattis in ex at porta.      
+           </p>
+        </div>
+    </section>    
+    <section class="section" id="projekty">
+    <div class="container">
+    <h2>HONORARIUM</h2>
+        <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta ut justo nec facilisis. Nulla nec diam vitae purus molestie porta vel vel lectus. Praesent sagittis lectus vel enim congue egestas. Sed id nibh tortor. Integer mattis in ex at porta.      
+           </p>
+        <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta ut justo nec facilisis. Nulla nec diam vitae purus molestie porta vel vel lectus. Praesent sagittis lectus vel enim congue egestas. Sed id nibh tortor. Integer mattis in ex at porta.      
+           </p>
+        </div>
+    </section>    
+    <section class="section" id="kontakt">
+    <div class="container">
+    <h2>KONTAKT</h2>
+        <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta ut justo nec facilisis. Nulla nec diam vitae purus molestie porta vel vel lectus. Praesent sagittis lectus vel enim congue egestas. Sed id nibh tortor. Integer mattis in ex at porta.      
+           </p>
+        <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta ut justo nec facilisis. Nulla nec diam vitae purus molestie porta vel vel lectus. Praesent sagittis lectus vel enim congue egestas. Sed id nibh tortor. Integer mattis in ex at porta.      
+           </p>
+      </div>  
+    </section>    
+
+    <footer class="footer">
+        <p>&copy; Igor Olszewski, 2017</p>
+    </footer>
+        
+    <script src="jquery.js"></script> 
+    <script src="stickyfill.js"></script> 
+    <script>
+        $('.nav').stickyfill();    
+        
+    </script>
+     <script>
+        
+        // Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top - 70
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+        
+    </script>
+    </body>    
+
+    
+    
+    
+    
+</html>
